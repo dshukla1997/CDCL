@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 from collections import deque
 import operator
 import os
@@ -358,22 +352,10 @@ class CDCL:
             self.branch_hist[self.level] = bt_var
             self.propagation_hist[self.level] = deque()
             self.update_graph(bt_var)
-            return 1
-
-    
-    
-
-
-
-            
+            return
         
-
-
-# In[2]:
-
-
 #Represent node for Implication Graph
-class Node:
+class Node
     def __init__(self,var,val):
         self.variable=var
         self.value=val
@@ -381,9 +363,6 @@ class Node:
         self.parents=[]
         self.children=[]
         self.clause=None
-
-
-# In[6]:
 
 
 #Driver Function
@@ -404,8 +383,6 @@ if __name__=="__main__":
         #print(solver.learned)
     print("-------------------------------------------------------------------------------------")
 
-
-# In[ ]:
 
 
 
